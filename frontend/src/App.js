@@ -1,15 +1,19 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import React from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <main className="pt-16">
-        <Outlet></Outlet>
-      </main>
-    </div>
+    <>
+    <Toaster/>
+      <div>
+        <Header />
+        <main className="pt-16 bg-slate-100 min-h-[calc(100vh)]">
+          <Outlet></Outlet>
+        </main>
+      </div>
+    </>
   );
 }
 

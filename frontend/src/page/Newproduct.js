@@ -2,7 +2,13 @@ import React from 'react'
 
 const Newproduct = () => {
   return (
-    <div>New Product</div>
+    <div>
+      <from>
+        <label htmlFor='name'>Name</label>
+        <input type={'text'} name="name"></input>
+        
+      </from>
+    </div>
   )
 }
 
